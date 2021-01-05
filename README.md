@@ -456,6 +456,10 @@ struct policy_holder {
 ### 3.3 交互设计
 选用设计简易圆角ui，主色灰调的主题。
 ![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/0.png?raw=true)
+![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/1.png?raw=true)
+![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/2.png?raw=true)
+![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/3.png?raw=true)
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
 ## 第四章 方案设计的技术支持
 ### 4.1 技术配置及硬件基础
 ##### 开发环境的配置
