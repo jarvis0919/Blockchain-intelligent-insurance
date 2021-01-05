@@ -480,13 +480,17 @@ struct policy_holder {
 | 计算机硬件 | Cpu:Intel(R)  Core(TM) i7-10750H CPU @ 2.20GHz  2.21  GHz,显卡:NVIDIA GeForce RTX 2060  |
 | 软件       | Google Chrome ; Metamask ; Web3js                            |
 | 其它       | 安装web3js，搭建本地链和可安装Metamask的浏览器。 |
-## 第五章 其他
-## Example Readmes
 
-要查看规范是如何应用的，请参阅 [example-readmes](example-readmes/).
+## 第五章 商业模式
+暂无商用
 
-## Related Efforts
+## 第六章 其他
+## 转载
 
-- [Art of Readme](https://github.com/noffle/art-of-readme) - 💌 Learn the art of writing quality READMEs.
-- [open-source-template](https://github.com/davidbgk/open-source-template/) - A README template to encourage open-source contributions.
-## 第六章 商业模式
+如要转载请注明来源    作者：Jarvis
+
+## 联系我
+
+- [我的主页](https://https://github.com/jarvis0919/) - 💌If you need to contact me, this is my home page.
+- [Emil](1318258863@qq.com) - My mailbox, business is not disturbed.
+
