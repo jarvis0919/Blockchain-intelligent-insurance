@@ -482,7 +482,7 @@ struct policy_holder {
 | ---------- | ------------------------------------------------------------ |
 | 计算机硬件 | Cpu:Intel(R)  Core(TM) i7-10750H CPU @ 2.20GHz  2.21  GHz,显卡:NVIDIA GeForce RTX 2060  |
 | 软件       | Google Chrome ; Metamask ; Web3js                            |
-| 其它       | 安装web3js，搭建本地链和可安装Metamask的浏览器。 |
+| 其它       | 安装web3js，搭建本地链和可安装Metamask的浏览器。  |
 
 ## 第五章 商业模式
 暂无商用
