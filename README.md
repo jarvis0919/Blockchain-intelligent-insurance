@@ -4,16 +4,6 @@
 现代社会发展过程中,风险无处不在,保险公司是社会经济正常运转、持续发展的后盾。经过改革开放30年的发展,我国保险业取得了举世瞩目的成就,逐步成长为国民经济发展中的明星行业。保险业积极参与经济建设和社会发展活动,积极主动渗透到国民经济的方方面面。
 到2007年,保险机构已成为债券市场的第二大机 构投资者和股票市场的重要机构投资者,在企业债、次级债等投资领域占据了主导地位;同时,积极参与抗灾救灾,勇于承担社会责任。在2008年初南方低温雨 雪冰冻灾害和5.12汶川地震两场重大自然灾害发生后,保险业全力投入抗灾救灾和灾后重建,得到了各级党委政府和人民群众的认可。保险逐浙成为人们日常生活话题。当然,随着保险业快速发展,存在产品结构单一、创新能力不足、行业恶性竞争、形象不佳和理赔运行现状不甚理想等问题也十分突出。因此,正确分析和认识中国保险业的现状及其存在问题,对规范中国保险市场、促进保险业的发展, 均有重要的指导意义。
 
-
-1. [The specification](spec.md) for how a standard README should look.
-2. A link to a linter you can use to keep your README maintained ([work in progress](https://github.com/RichardLitt/standard-readme/issues/5)).
-3. A link to [a generator](https://github.com/RichardLitt/generator-standard-readme) you can use to create standard READMEs.
-4. [A badge](#badge) to point to this spec.
-5. [Examples of standard READMEs](example-readmes/) - such as this file you are reading.
-
-Standard Readme is designed for open source libraries. Although it’s [historically](#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
-
-
 ## 目录
 - [前言](#前言)
 - [第一章 背景与现状](#第一章背景与现状)
