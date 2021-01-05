@@ -1,11 +1,12 @@
 # Blockchain-intelligent-insurance区块链智能保险
-致力于建立全新信任社会体系# Standard Readme
-![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/%E5%B0%81%E9%9D%A2.png?raw=true)
+
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-现代社会发展过程中,风险无处不在,保险公司是社会经济正常运转、持续发展的后盾。经过改革开放30年的发展,我国保险业取得了举世瞩目的成就,逐步成长为国民经济发展中的明星行业。保险业积极参与经济建设和社会发展活动,积极主动渗透到国民经济的方方面面。
-到2007年,保险机构已成为债券市场的第二大机 构投资者和股票市场的重要机构投资者,在企业债、次级债等投资领域占据了主导地位;同时,积极参与抗灾救灾,勇于承担社会责任。在2008年初南方低温雨 雪冰冻灾害和5.12汶川地震两场重大自然灾害发生后,保险业全力投入抗灾救灾和灾后重建,得到了各级党委政府和人民群众的认可。保险逐浙成为人们日常生活话题。当然,随着保险业快速发展,存在产品结构单一、创新能力不足、行业恶性竞争、形象不佳和理赔运行现状不甚理想等问题也十分突出。因此,正确分析和认识中国保险业的现状及其存在问题,对规范中国保险市场、促进保险业的发展, 均有重要的指导意义。
+A standard style for README files
 
+Your README file is normally the first entry point to your code. It should tell people why they should use your module, how they can install it, and how they can use it. Standardizing how you write your README makes creating and maintaining your READMEs easier. Great documentation takes work!
+
+This repository contains:
 
 1. [The specification](spec.md) for how a standard README should look.
 2. A link to a linter you can use to keep your README maintained ([work in progress](https://github.com/RichardLitt/standard-readme/issues/5)).
@@ -16,18 +17,23 @@
 Standard Readme is designed for open source libraries. Although it’s [historically](#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
 
 
-## Table of Contents
-
-- [Background](#background)
-- [Install](#install)
-- [Usage](#usage)
-	- [Generator](#generator)
-- [Badge](#badge)
-- [Example Readmes](#example-readmes)
-- [Related Efforts](#related-efforts)
-- [Maintainers](#maintainers)
-- [Contributing](#contributing)
-- [License](#license)
+## 目录
+- [前言](#install)
+- [第一章 背景与现状](#usage)
+	- [1.1 保险业的发展历史](#generator)
+	- [1.2 保险业利用信息化社会的发展现状](#generator)
+	- [1.3 基于区块链的保险业的发展前景](#generator)
+- [第二章 区块链技术于保险业的优势](#badge)
+	- [2.1 传统保险业的弊端](#generator)
+	- [2.2 基于区块链的智能保险业的优势](#generator)
+- [第三章 基于区块链的智能化保险方案设计](#example-readmes)
+ 	- [3.1 业务设计](#generator)
+	- [3.2 架构设计](#generator)
+	- [3.3 交互设计](#generator)
+- [第四章 方案设计的技术支持](#related-efforts)
+   	- [4.1 以太坊](#generator)
+- [第五章 应用及业务实践](#maintainers)
+- [第六章 商业模式](#contributing)
 
 ## Background
 
