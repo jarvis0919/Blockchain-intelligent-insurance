@@ -152,7 +152,7 @@ Standard Readme is designed for open source libraries. Although it’s [historic
 
 
 ## 第三章 基于区块链的智能化保险方案设计
-### 3.1	业务设计
+### 3.1 业务设计
 
 ### 3.2 架构设计
 |设保项目|
