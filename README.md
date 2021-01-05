@@ -459,7 +459,7 @@ struct policy_holder {
 ![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/1.png?raw=true)
 ![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/2.png?raw=true)
 ![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/3.png?raw=true)
-查看更多图片，请参阅 [Blockchain-intelligent-insurance](Blockchain-intelligent-insurance/).
+查看更多图片，请参阅 [img](https://github.com/jarvis0919/Blockchain-intelligent-insurance/tree/main/img).
 ## 第四章 方案设计的技术支持
 ### 4.1 技术配置及硬件基础
 ##### 开发环境的配置
