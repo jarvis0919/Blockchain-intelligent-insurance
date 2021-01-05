@@ -16,24 +16,24 @@ Standard Readme is designed for open source libraries. Although it’s [historic
 
 ## 目录
 - [前言](#前言)
-- [第一章 背景与现状](#第一章-背景与现状)
-	- [1.1 保险业的发展历史](#11-保险业的发展历史)
-	- [1.2 保险业利用信息化社会的发展现状](#12-保险业利用信息化社会的发展现状)
-	- [1.3 基于区块链的保险业的发展前景](#13-基于区块链的保险业的发展前景)
-- [第二章 区块链技术于保险业的优势](#第二章-区块链技术于保险业的优势)
-	- [2.1 传统保险业的弊端](#21-传统保险业的弊端)
-	- [2.2 基于区块链的智能保险业的优势](#22-基于区块链的智能保险业的优势)
-- [第三章 基于区块链的智能化保险方案设计](#第三章-基于区块链的智能化保险方案设计)
- 	- [3.1 业务设计](#31-业务设计)
-	- [3.2 架构设计](#32-架构设计)
-	- [3.3 交互设计](#33-交互设计)
-- [第四章 方案设计的技术支持](#第四章-方案设计的技术支持)
-   	- [4.1 以太坊](#41-以太坊)
-- [第五章 应用及业务实践](#第五章-应用及业务实践)
-- [第六章 商业模式](#第六章-商业模式)
+- [第一章 背景与现状](#第一章背景与现状)
+	- [1.1 保险业的发展历史](#11保险业的发展历史)
+	- [1.2 保险业利用信息化社会的发展现状](#12保险业利用信息化社会的发展现状)
+	- [1.3 基于区块链的保险业的发展前景](#13基于区块链的保险业的发展前景)
+- [第二章 区块链技术于保险业的优势](#第二章区块链技术于保险业的优势)
+	- [2.1 传统保险业的弊端](#21传统保险业的弊端)
+	- [2.2 基于区块链的智能保险业的优势](#22基于区块链的智能保险业的优势)
+- [第三章 基于区块链的智能化保险方案设计](#example-readmes)
+ 	- [3.1 业务设计](#generator)
+	- [3.2 架构设计](#generator)
+	- [3.3 交互设计](#generator)
+- [第四章 方案设计的技术支持](#related-efforts)
+   	- [4.1 以太坊](#generator)
+- [第五章 应用及业务实践](#maintainers)
+- [第六章 商业模式](#contributing)
 
 ## 第一章 背景与现状
-### 1.1 保险业的发展历史
+### 1.1保险业的发展历史
 
 ##### （一）中国保险业的开端。
 > 鸦片战争以后，西方列强迫使清政府签订了一系列不平等条约，加强了对我国的政治、军事、经济的侵略。外国保险公司纷纷登陆中国，中国保险市场逐渐形成。外国保险公司凭借不平等条约所持有的政治特权扩张业务领域，利用买办招揽业务，垄断了早期的中国保险市场从中，攫取了巨额利润。面对外商独占中国保险市场，每年从中国掠夺巨额利润，致使白银大量外流这一严峻事实，中国人民振兴图强、维护民族权利、自办保险的民族意识被激起。在此情况下，1865年月25日义和公司保险行在上海创立。义和公司保险行，是我国第一家自办的保险机构，其成立打破了外商保险公司独占中国保险市场的局面，为以后民族保险业的兴起开辟了先河。提到保险业就不得不提到航运业，保险与贸易两者是互为表里的关系。轮船招商局于1872年在上海成立，是中国人自办的最早的轮船航运企业，也是现在的招商局集团的前身。它不仅是中国现代航运业的起点，也可以说是中国保险业的源头之一。轮船招商局自创办之日起就深刻明白保险对于航运业的重要作用。作为一种打击竞争对手的手法，早期依附于外商航运业的外资保险公司听命于上司，为了击垮轮船招商局，对其所属船舶百般刁难。收取高额保费、对中国本土产的船只不保等限制。以李鸿章为代表的洋务派，为适应航运业发展的需要，先后创办了“保险招商局”、“仁和水险公司”和“济和水火险公司”等官办保险公司，取得了较好保险的经营业绩，并坚持与外商保险公司进行斗争，从而在一定程度上抵制了外商对中国保险市场的控制。当然，洋务派在保险业方面的努力不能改变外商垄断中国保险市场的局面。
@@ -151,36 +151,181 @@ Standard Readme is designed for open source libraries. Although it’s [historic
 
 
 
-## 第三章 基于区块链的智能化保险方案设计
-### 3.1 业务设计
+## 第三章  基于区块链的智能化保险方案设计
+### 3.1	业务设计
+基于区块链的智能化保险作为信用社会中的理财产品，取代传统保险业的业务员模式，
+并通过区块链保存不可篡改的特性、以及智能合约的全自动化，来实现行业革新。
+从业务功能上来说，智能化保险应用包括发行保险产品、客户购买、时长内赔保、查验保险是否过期。
+几个环节，
+1. 发行保险产品
+由保险公司研发保险理财产品，并于平台上发行。
+2. 客户购买
+于平台上自行挑选保险产品，客户提供由政府机构或医疗机构开出的证明等各项信息或凭证，通过购买保险要求验证，
+自主购买。
+3. 时长内赔保
+投保人或受益者提供相关证明于平台，符合要求后，保额会自动发送至购保时所设置的账户。
+具体
+流程如下：
+>（1）投保人或受益者提供相关证明；
+（2）智能合约自动核验是否合格；
+（3）符合要求，保额会自动发送至购保时所设置的账户。
+
+区块链智能化保险平台包括统一后台管理中心、客户个人中心。其中统一后台管理中心集合了保险发行服务，合约金额查看服务，为公司企业服务。客户个人中心是提供给客户使用，客户可以通过电脑客户端、手机客户端，访问平台。挑选符合自己需求的保险购买。
 
 ### 3.2 架构设计
-|设保项目|
-【车险保险】
-【健康保险】
-|投保人|
-【是否满足投保人要求】
-【投保人是否满足购保要求】
-（例如：满足投保年龄的要求）
-【投保人是否有投保项目相应隐患】
-（例如：满足健康状况的要求）
-|受益人|
-【需有承担受益的能力】
-（无行为能力者需有监护人）
-儿童或不能辨认自己行为的精神病人。
-|购保金额|
-|保证金额|
-|保险时限|
-【购保时间】
-【持续时长】
-|违约惩罚|
-【规定时限未交维保金额】
-（根据保单类型情况分以下俩种情况）
-1.通知客户
-支付保险金后，扣除保单宽限期内应缴的当期保险费
-超过保单宽限期没有交费，那么保单进入中止期，取消保单。
-2.直接取消用户所受保单。
-注：违保或骗保造成的损失定则以及契约精神违背的惩罚。
+#### （1）结构体
+ **保险项目**
+```sh
+struct Insurance_items {
+        //保险项目
+        string name; //项目名
+        string requirements; //要求（接口 例如：死亡证明，事故证明，病情证明）
+        uint128 Price; //价格
+        address publisherid; //发行人
+        string publisher; //发布者
+        uint128 Insured_price; //保价
+    }
+```
+>由保险研发部研发
+
+**保单**
+```sh
+struct Insurance_policy {
+        //保单
+        uint256 starttime; //开始时间
+        uint256 stoptime; //结束时间
+        address holdner; //投保人地址
+        address benner; //受益人地址
+        bool Policy_status; //保单状态
+        string Policy_type; //保险项目
+        uint256 Indemnity; //赔款
+        string requirement; //保险要求
+    }
+```
+>保险单
+
+**客户对象**
+```sh
+struct policy_holder {
+        //投保人
+        string name; //姓名
+        string personal_information; //投保人信息
+        uint32 age; //年龄
+        bool guardian; //是否有监护人
+        string Insured_object_status; //受保对象状态
+        address holderOwner; //投保人地址id
+        uint32 password; //密码
+    }
+```
+**公司研发部**
+```sh
+   struct company {
+        //公司保险研发部
+        string identity; //身份
+        address companyOwner; //地址id
+        uint32 password;
+        uint32 id;
+    }
+```
+>公司内部使用
+
+#### **（2）方法**
+**合约内预存款**
+```sh
+   function giveMEeth() public payable returns (bool) {
+    }
+```
+**创建公司操作账户**
+```sh
+       function addcompany(
+        string memory _name,
+        address _pAdd,
+        uint32 _password
+    ) public returns (uint32 kk) {
+        uint32 userId = companyid++;
+        companys[userId].identity = _name;
+        companys[userId].companyOwner = _pAdd;
+        companys[userId].password = _password;
+        companys[userId].id = userId;
+        return userId;
+    }
+```
+**查看公司权限账户**
+```sh
+    function getcompany(uint32 _ids,uint32 psw)
+        public
+        view
+        returns (
+            string memory a1,
+            address a2,
+            uint32 a3,
+            uint32 a4
+        )
+    {
+        require(companys[_ids].password == psw);
+        require(companys[_ids].companyOwner == msg.sender);
+        a1 = companys[_ids].identity;
+        a2 = companys[_ids].companyOwner;
+        a3 = companys[_ids].password;
+        a4 = companys[_ids].id;
+        return (a1, a2, a3, a4);
+    }
+```
+**创建保险**
+```sh
+    function additems(
+        uint32 _ownerId,
+        uint32 _password,
+        string memory _name,
+        string memory _requirements,
+        uint128 _price,
+        uint128 _inprice
+    ) public returns (uint32) {
+        require(companys[_ownerId].companyOwner == msg.sender);
+        require(companys[_ownerId].password == _password);
+        uint32 id1 = itemid++;
+        items[id1].name = _name;
+        items[id1].requirements = _requirements;
+        items[id1].Price = _price;
+        items[id1].Insured_price = _inprice;
+        items[id1].publisher = companys[_ownerId].identity;
+        items[id1].publisherid = companys[_ownerId].companyOwner;
+        return id1;
+    }
+```
+**查看目前的保险项目**
+```sh
+   function getitems(uint32 _id2)
+        public
+        view
+        returns (
+            string memory s1,
+            string memory s2,
+            uint256 s3,
+            uint256 s4,
+            string memory s5,
+            address s6
+        )
+    {
+        s1 = items[_id2].name;
+        s2 = items[_id2].requirements;
+        s3 = items[_id2].Price;
+        s4 = items[_id2].Insured_price;
+        s5 = items[_id2].publisher;
+        s6 = items[_id2].publisherid;
+        return (s1, s2, s3, s4, s5, s6);
+    }
+```
+**合约内预存款**
+```sh
+   function giveMEeth() public payable returns (bool) {
+    }
+```
+**合约内预存款**
+```sh
+   function giveMEeth() public payable returns (bool) {
+    }
+```
 
 ### 3.3 交互设计
 
