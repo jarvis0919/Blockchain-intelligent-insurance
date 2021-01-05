@@ -4,6 +4,16 @@
 现代社会发展过程中,风险无处不在,保险公司是社会经济正常运转、持续发展的后盾。经过改革开放30年的发展,我国保险业取得了举世瞩目的成就,逐步成长为国民经济发展中的明星行业。保险业积极参与经济建设和社会发展活动,积极主动渗透到国民经济的方方面面。
 到2007年,保险机构已成为债券市场的第二大机 构投资者和股票市场的重要机构投资者,在企业债、次级债等投资领域占据了主导地位;同时,积极参与抗灾救灾,勇于承担社会责任。在2008年初南方低温雨 雪冰冻灾害和5.12汶川地震两场重大自然灾害发生后,保险业全力投入抗灾救灾和灾后重建,得到了各级党委政府和人民群众的认可。保险逐浙成为人们日常生活话题。当然,随着保险业快速发展,存在产品结构单一、创新能力不足、行业恶性竞争、形象不佳和理赔运行现状不甚理想等问题也十分突出。因此,正确分析和认识中国保险业的现状及其存在问题,对规范中国保险市场、促进保险业的发展, 均有重要的指导意义。
 
+
+1. [The specification](spec.md) for how a standard README should look.
+2. A link to a linter you can use to keep your README maintained ([work in progress](https://github.com/RichardLitt/standard-readme/issues/5)).
+3. A link to [a generator](https://github.com/RichardLitt/generator-standard-readme) you can use to create standard READMEs.
+4. [A badge](#badge) to point to this spec.
+5. [Examples of standard READMEs](example-readmes/) - such as this file you are reading.
+
+Standard Readme is designed for open source libraries. Although it’s [historically](#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
+
+
 ## 目录
 - [前言](#前言)
 - [第一章 背景与现状](#第一章背景与现状)
@@ -306,17 +316,150 @@ struct policy_holder {
         return (s1, s2, s3, s4, s5, s6);
     }
 ```
-**合约内预存款**
+**创建客户账户**
 ```sh
-   function giveMEeth() public payable returns (bool) {
+    function addholder(
+        string memory _name,
+        string memory _perinfor,
+        uint32 _age,
+        bool guardian2,
+        string memory _obst,
+        address _owner,
+        uint32 _password1
+    ) public returns (uint32) {
+        uint32 id3 = holderid++;
+        holder[id3].name = _name;
+        holder[id3].personal_information = _perinfor;
+        holder[id3].age = _age;
+        holder[id3].guardian = guardian2;
+        holder[id3].Insured_object_status = _obst;
+        holder[id3].holderOwner = _owner;
+        holder[id3].password = _password1;
+        return id3;
     }
 ```
-**合约内预存款**
+**查看客户账户**
 ```sh
-   function giveMEeth() public payable returns (bool) {
+    function getholder(uint32 _id4, uint32 _password2)
+        public
+        view
+        returns (
+            string memory d1,
+            string memory d2,
+            uint32 d3,
+            string memory d4,
+            address d5
+        )
+    {
+        require(holder[_id4].password == _password2);
+        require(holder[_id4].holderOwner == msg.sender);
+        d1 = holder[_id4].name;
+        d2 = holder[_id4].personal_information;
+        d3 = holder[_id4].age;
+        d4 = holder[_id4].Insured_object_status;
+        d5 = holder[_id4].holderOwner;
+        return (d1, d2, d3, d4, d5);
     }
 ```
+**得到保险项目的时长价格**
+```sh
+    function getprice(uint32 idi, uint32 _limit) public view returns (uint256) {
+        return uint256(items[idi].Price * _limit);
+    }
+```
+**创建保单**
+```sh
+    function addpolicy(
+        uint32 _limit,
+        address _holdner,
+        address _benner,
+        uint32 id7
+    ) public payable returns (bool) {
+        uint256 timestart = block.timestamp;
+        uint256 timestop = _limit * 86400 + block.timestamp;
+        require(msg.value == uint256(items[id7].Price * _limit));
+        uint32 id6 = policyid++;
+        policy[id6].starttime = timestart;
+        policy[id6].stoptime = timestop;
+        policy[id6].holdner = _holdner;
+        policy[id6].benner = _benner;
+        policy[id6].Policy_status = true;
+        policy[id6].Policy_type = items[id7].name;
+        policy[id6].Indemnity = items[id7].Insured_price;
+        policy[id6].requirement = items[id7].requirements;
+        return true;
+    }
+```
+**查看账户所属下的保单**
+```sh
+    function getpolicy(uint32 id8)
+        public
+        returns (
+            uint256 g1,
+            uint256 g2,
+            address g3,
+            address g4,
+            bool g5,
+            string memory g6,
+            uint256 g7
+        )
+    {
+        g1 = policy[id8].starttime;
+        g2 = policy[id8].stoptime;
+        g3 = policy[id8].holdner;
+        g4 = policy[id8].benner;
+        g5 = policy[id8].Policy_status;
+        g6 = policy[id8].Policy_type;
+        g7 = policy[id8].Indemnity;
 
+        if (
+            msg.sender == policy[id8].holdner ||
+            msg.sender == policy[id8].benner
+        ) {
+            if (block.timestamp > policy[id8].stoptime) {
+                policy[id8].Policy_status = false;
+                return (g1, g2, g3, g4, g5, g6, g7);
+            }
+            return (g1, g2, g3, g4, g5, g6, g7);
+        }
+        g1 = 20;
+        uint256 a3;
+        address a4;
+        address a5;
+        bool a6;
+        string memory a7;
+        uint32 a8;
+        return (g1, a3, a4, a5, a6, a7, a8);
+    }
+```
+**获取保险保额**
+``` sh
+    function getIndemnity(uint32 id9, string memory _requirements)
+        public
+        payable
+        returns (uint256 kk)
+    {
+        require(
+            msg.sender == policy[id9].holdner ||
+                msg.sender == policy[id9].benner
+        );
+        if (block.timestamp > policy[id9].stoptime) {
+            policy[id9].Policy_status = false;
+            return 2;
+        } else if (
+            keccak256(abi.encodePacked(_requirements)) ==
+            keccak256(abi.encodePacked(policy[id9].requirement))
+        ) {
+            require(address(this).balance > policy[id9].Indemnity);
+            address q = policy[id9].benner;
+            payable(q).transfer(policy[id9].Indemnity);
+            policy[id9].Policy_status = false;
+            return 1;
+        }
+
+        return 0;
+    }
+```
 ### 3.3 交互设计
 
 ## 第四章 方案设计的技术支持
