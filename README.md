@@ -1,6 +1,4 @@
 # Blockchain-intelligent-insurance区块链智能保险
-致力于建立全新信任社会体系
-# Blockchain-intelligent-insurance区块链智能保险
 致力于建立全新信任社会体系# Standard Readme
 ![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/%E5%B0%81%E9%9D%A2.png?raw=true)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
@@ -118,4 +116,3 @@ This project exists thanks to all the people who contribute.
 ## License
 
 [MIT](LICENSE) © Richard Littauer
-
