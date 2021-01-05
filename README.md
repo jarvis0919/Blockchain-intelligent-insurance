@@ -459,7 +459,7 @@ struct policy_holder {
 ![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/1.png?raw=true)
 ![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/2.png?raw=true)
 ![enter image description here](https://github.com/jarvis0919/Blockchain-intelligent-insurance/blob/main/img/3.png?raw=true)
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+查看更多图片，请参阅 [Blockchain-intelligent-insurance](Blockchain-intelligent-insurance/).
 ## 第四章 方案设计的技术支持
 ### 4.1 技术配置及硬件基础
 ##### 开发环境的配置
@@ -481,5 +481,12 @@ struct policy_holder {
 | 软件       | Google Chrome ; Metamask ; Web3js                            |
 | 其它       | 安装web3js，搭建本地链和可安装Metamask的浏览器。 |
 ## 第五章 其他
+## Example Readmes
 
+要查看规范是如何应用的，请参阅 [example-readmes](example-readmes/).
+
+## Related Efforts
+
+- [Art of Readme](https://github.com/noffle/art-of-readme) - 💌 Learn the art of writing quality READMEs.
+- [open-source-template](https://github.com/davidbgk/open-source-template/) - A README template to encourage open-source contributions.
 ## 第六章 商业模式
