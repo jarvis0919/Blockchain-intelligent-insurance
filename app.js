@@ -255,29 +255,13 @@ var contractabi = [
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_limit",
-				"type": "uint256"
-			}
-		],
+		"inputs": [],
 		"name": "getBalance",
 		"outputs": [
 			{
 				"internalType": "uint256",
 				"name": "",
 				"type": "uint256"
-			},
-			{
-				"internalType": "int256",
-				"name": "",
-				"type": "int256"
-			},
-			{
-				"internalType": "int256",
-				"name": "",
-				"type": "int256"
 			}
 		],
 		"stateMutability": "view",
@@ -435,19 +419,6 @@ var contractabi = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "getmsg",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "uint32",
@@ -518,35 +489,6 @@ var contractabi = [
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint32",
-				"name": "_ownerId1",
-				"type": "uint32"
-			},
-			{
-				"internalType": "uint32",
-				"name": "_password1",
-				"type": "uint32"
-			},
-			{
-				"internalType": "uint32",
-				"name": "money",
-				"type": "uint32"
-			}
-		],
-		"name": "give",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
@@ -749,7 +691,7 @@ var contractabi = [
 		"type": "function"
 	}
 ];
-var contract = new web3.eth.Contract(contractabi, "0xfA94E1B1D8D8a37Bf0b0f3B1ca9Db47242E422c4");
+var contract = new web3.eth.Contract(contractabi, "0xfbFB71Af357f8D85d6CdbF91877622aAf89Bbeb3");
 console.log(contract);
 
 
@@ -798,9 +740,9 @@ $(".addcompany").click(function () {
 // 	);
 // });
 $(".getcompany").click(function () {
-	let _index = $("#companyOwner1").val();
-	let pas = $("#password1").val();
-	contract.methods.getcompany(_index, pas).call({ from: accounts[0] }).then(
+	let cdf = $("#companyOwner1").val();
+	let lo = $("#passwordijk").val();
+	contract.methods.getcompany(cdf, lo).call({ from: accounts[0] }).then(
 		function (result) {
 			window.location.href = "company.html";
 			$(location).attr("href", "company.html");
@@ -1039,6 +981,27 @@ function getIndemnity(i) {
 			console.log(result);
 		})
 };
+$(".getBalance").click(function () {
+	contract.methods.getBalance().call({ from: accounts[0] }).then(
+		function (result) {
+			let kih = result;
+			let uhg = kih /1000000000000000000;
+			$('#blance').html("当前合约中金额"+uhg);
+			})
+});
+$(".giveMEeth").click(function () {
+	let give = $("#give").val();
+	let pricesss = give *1000000000000000000;
+	let pricess = (Number(pricesss)).toString(16);
+	
+			console.log(pricess);
+			let prices12 = '0x' + pricess;
+	contract.methods.giveMEeth().send({ from: accounts[0],value: prices12 }).then(
+		function () {
+			$('#chenggong').html("成功");
+			})
+});
+
 
 
 

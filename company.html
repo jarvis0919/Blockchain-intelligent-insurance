@@ -26,6 +26,7 @@
         <div class="et-hero-tabs-container">
             <a class="et-hero-tab" href="#tab-flexbox">创建保险项目</a>
             <a class="et-hero-tab" href="#tab-react">目前运行中保险项目</a>
+            <a class="et-hero-tab" href="#tab-react5">合约状态</a>
             <a class="et-hero-tab" href="#tab-es1">返回顶部</a>
             <span class="et-hero-tab-slider"></span>
         </div>
@@ -34,6 +35,7 @@
 
     <!-- Main -->
     <main class="et-main">
+
         <section class="et-slide" id="tab-flexbox">
             <h1>创建保险项目</h1>
             <h3></h3>
@@ -53,6 +55,19 @@
             <button class="getitems">当前保险项目</button>
             <div id="box1"></div>
         </section>
+        <section class="et-slide" id="tab-react5">
+            <h1>获取当前合约中余额</h1>
+            <h2>合约</h2>
+            <button class="getBalance">获取</button>
+            <h3><div id="blance"></div></h3>
+            <div>
+            <h3>金额: </h3><input type="text" name="保赔金额" id="give" value="" /><br>
+            <button class="giveMEeth">转入合约</button>
+            <div id="chenggong"></div>
+        </div>
+           
+        </section>
+        
     </main>
 
     <script src="js/jquery.min.js"></script>
